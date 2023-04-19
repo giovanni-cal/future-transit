@@ -11,7 +11,7 @@ myinput = fscanf(fopen('myinput.txt'),'%f',[6,Inf]); fclose('all');
 %myinput = [10,15,20,30;1600,1600,1600,1600;0.12,0.12,0.12,0.12;1,1,1,1];
 %myinput = [40;1600;0.12;3;7.5;500];
 %read in this order: R ; rho_0 ; gamma ; f ; r ; Q_try
-% f = 0 -> Backbone Only, 1 -> fixed FMLM, 2 -> DemResp FMLM, 3 -> adaptive
+% f = 0 -> MRT Only, 1 -> MRT-FRF scheme, 2 -> MRT-DRF scheme, 3 -> adaptive scheme
 
 for n_run = 1:length(myinput(1,:))
  
